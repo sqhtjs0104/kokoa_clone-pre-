@@ -17,17 +17,37 @@
 </head>
 <body>
     <div id="statusBar">
-        <div class="statusBar_column">
+        <div class="statusBar__column">
             <span>No Service</span>
-            <!-- To Do: Wifi Icon -->
+            <i class="fas fa-wifi"></i>
         </div>
-        <div class="statusBar_column">
+        <div class="statusBar__column">
             <span id="nowTime">00:00</span>
-            <script type="text/javascript">whatTimeIsNow();</script>
         </div>
-        <div class="statusBar_column">
-            <span></span>
+        <div class="statusBar__column">
+            <span>100%</span>
+            <!-- Extension plan: Interlock System Battery -->
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
         </div>
     </div>
+
+    <header class="welcomeHeader">
+        <h1 class="welcomeHeader__title">Welcome to kokoa Clone</h1>
+        <p class="welcomeHeader__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+    </header>
+
+    <main>
+        <form id="loginForm">
+            <input type="text" placeholder="Email or phone number" />
+            <input type="password" placeholder="password" />
+            <input type="submit" value="Log In" />
+            <input type="button" value="Sign Up" />
+            <a href="#">Find Kokoa Account or Password</a>
+        </form>
+    </main>
+
+    <script type="text/javascript">whatTimeIsNow();</script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
