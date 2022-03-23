@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KokoaTalk</title>
+    <meta name="description" content="Nomad Coder Coding Challange - HTML-CSS" />
+
+    <script type="text/javascript">
+        function whatTimeIsNow() {
+            var nowDate = new Date();
+            var nowTime = document.getElementById("nowTime");
+            nowTime.innerHTML =  nowDate.getHours() + ":" + nowDate.getMinutes();
+            setTimeout(whatTimeIsNow, 1000);
+        }
+    </script>
+</head>
+<body>
+    <div id="statusBar">
+        <div class="statusBar_column">
+            <span>No Service</span>
+            <!-- To Do: Wifi Icon -->
+        </div>
+        <div class="statusBar_column">
+            <span id="nowTime">00:00</span>
+            <script type="text/javascript">whatTimeIsNow();</script>
+        </div>
+        <div class="statusBar_column">
+            <span></span>
+        </div>
+    </div>
+</body>
+</html>
