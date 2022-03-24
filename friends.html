@@ -8,20 +8,12 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
-    <script type="text/javascript">
-        function whatTimeIsNow() {
-            var nowDate = new Date();
-            var nowTime = document.getElementById("nowTime");
-            nowTime.innerHTML =  nowDate.getHours() + ":" + nowDate.getMinutes();
-            setTimeout(whatTimeIsNow, 1000);
-        }
-    </script>
+    <script src="js/clock.js"></script>
 </head>
 <body>
     <div class="statusBar">
         <div class="statusBar__column">
             <span>No Service</span>
-            <!-- To Do: Wifi Icon -->
             <i class="fas fa-wifi"></i>
         </div>
         <div class="statusBar__column">
@@ -35,7 +27,16 @@
         </div>
     </div>
 
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__a" href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
+            <li class="nav__li"><a class="nav__a" href="#"><i class="fa-regular fa-comment fa-2x"></i></a></li>
+            <li class="nav__li"><a class="nav__a" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+            <li class="nav__li"><a class="nav__a" href="#"><i class="fa-solid fa-ellipsis fa-2x"></i></li>
+        </ul>
+    </nav>
+
     <script type="text/javascript">whatTimeIsNow();</script>
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cb9a8df948.js" crossorigin="anonymous"></script>
 </body>
 </html>
