@@ -27,12 +27,74 @@
         </div>
     </div>
 
+    <headder class="screenHeader">
+        <h1 class="screenHeader__title">Friends</h1>
+        <div class="screenHeader__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </headder>
+
+    <a id="friendsDisplayLink" href="#">
+        <i class="fa-solid fa-circle-info"></i>
+        Friends' Name Display
+        <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friendsScreen">
+        <div class="userComponent">
+            <div class="userComponent__column"></div>
+                <img class="userComponent__avatar userComponent__avatar--xl" src="images/bsProfile.jpg" alt="" />
+                <div class="userComponent__text">
+                    <h4 class="userComponent__title">BoSeon</h4>
+                    <!-- <h6 class="userComponent__subtitle">Hello, I'm BoSeon!</h6> -->
+                </div>
+            <div class="userComponent__column"></div>
+        </div>
+        <div class="friendsScreen__channel">
+            <div class="friendsScreen__channel__header">
+                <span>Channel</span>
+                <i class="fa-solid fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="userComponent">
+                <div class="userComponent__column"></div>
+                    <img class="userComponent__avatar userComponent__avatar--sm" src="images/bsProfile.jpg" alt="" />
+                    <div class="userComponent__text">
+                        <h4 class="userComponent__title">Channel</h4>
+                    </div>
+                <div class="userComponent__column">
+                    <span>2</span>
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+    
     <nav class="nav">
         <ul class="nav__ul">
-            <li class="nav__li"><a class="nav__a" href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
-            <li class="nav__li"><a class="nav__a" href="#"><i class="fa-regular fa-comment fa-2x"></i></a></li>
-            <li class="nav__li"><a class="nav__a" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
-            <li class="nav__li"><a class="nav__a" href="#"><i class="fa-solid fa-ellipsis fa-2x"></i></li>
+            <li class="nav__li">
+                <a class="nav__a" href="friends.html">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__a" href="#">
+                    <span class="nav__notification">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__a" href="#">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__a" href="#">
+                    <span class="nav__dotNotification">1</span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
         </ul>
     </nav>
 

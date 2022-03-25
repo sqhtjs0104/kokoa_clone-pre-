@@ -1,0 +1,14 @@
+.friendsScreen {
+    padding: 0px var(--horizontalSpace);
+}
+#friendsDisplayLink {
+    display: block;
+    padding: 15px 0px;
+    background-color: #fafafa;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#friendsDisplayLink i {
+    color: rgba(0, 0, 0, 0.3);
+}
