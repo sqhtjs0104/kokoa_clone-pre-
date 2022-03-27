@@ -32,27 +32,29 @@
         <div class="screenHeader__icons">
             <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
             <span class="screenHeader__span">
-                <span class="dotBadge screenHeader__dotNotification"></span>
-                <i class="fas fa-cog fa-lg"></i>
+                <a href="settings.html">
+                    <span class="dotBadge screenHeader__dotNotification"></span>
+                    <i class="fas fa-cog fa-lg"></i>
+                </a>
             </span>
         </div>
     </headder>
 
     <main class="mainScreen">
-        <div class="findIcons">
-            <div class="findIcons__icon">
+        <div class="iconRow">
+            <div class="iconRow__icon">
                 <i class="fa-solid fa-qrcode"></i>
                 <span>QR Code</span>
             </div>
-            <div class="findIcons__icon">
+            <div class="iconRow__icon">
                 <i class="fa-solid fa-address-book"></i>
                 <span>Add by<br>Contacts</span>
             </div>
-            <div class="findIcons__icon">
+            <div class="iconRow__icon">
                 <i class="fa-solid fa-fingerprint"></i>
                 <span>Add by ID</span>
             </div>
-            <div class="findIcons__icon">
+            <div class="iconRow__icon">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Invite</span>
             </div>
@@ -66,48 +68,54 @@
                 <h4>Open Chat</h4>
                 <span>Go to Openchat Home <i class="fa-solid fa-chevron-right fa-xs"></i></span>
             </div>
-            <div class="openPost">
-                <div class="openPost__column">
-                    <h5 class="openPost__title">#GrandParkSeoul</h5>
-                    <h6 class="openPost__hashtags">#tiger#deer#seal</h6>
-                    <div class="openPost__members">
-                        <img src="images/bsProfile.jpg" />
-                        <span class="openPost__memberCount">802 members</span>
-                        <div class="divider"></div>
-                        <span class="openPost__memberStatus">Active</span>
-                    </div>
-                </div>
-                <div class="openPost__column">
-                    <div class="openPost__photo">
-                        <img src="images/grandParkSeoul.jpg" />
-                        <div class="openPost__heartCount">
-                            <i class="fa-solid fa-heart fa-xs"></i>
-                            <span>326</span>
+            <ul class="openChat__posts">
+                <li class="openPost">
+                    <a href="https://grandpark.seoul.go.kr/main/ko.do" target="_blank">
+                        <div class="openPost__column">
+                            <h5 class="openPost__title">#GrandParkSeoul</h5>
+                            <h6 class="openPost__hashtags">#tiger#deer#seal</h6>
+                            <div class="openPost__members">
+                                <img src="images/bsProfile.jpg" />
+                                <span class="openPost__memberCount">802 members</span>
+                                <div class="divider"></div>
+                                <span class="openPost__memberStatus">Active</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="openPost">
-                <div class="openPost__column">
-                    <h5 class="openPost__title">#DayOfButler</h5>
-                    <h6 class="openPost__hashtags">#cats#shorthear#ragdoll</h6>
-                    <div class="openPost__members">
-                        <img src="images/bsProfile.jpg" />
-                        <span class="openPost__memberCount">802 members</span>
-                        <div class="divider"></div>
-                        <span class="openPost__memberStatus">Active</span>
-                    </div>
-                </div>
-                <div class="openPost__column">
-                    <div class="openPost__photo">
-                        <img src="images/dayOfButler.jpg" />
-                        <div class="openPost__heartCount">
-                            <i class="fa-solid fa-heart fa-xs"></i>
-                            <span>255</span>
+                        <div class="openPost__column">
+                            <div class="openPost__photo">
+                                <img src="images/grandParkSeoul.jpg" />
+                                <div class="openPost__heartCount">
+                                    <i class="fa-solid fa-heart fa-xs"></i>
+                                    <span>326</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </a>
+                </li>
+                <li class="openPost">
+                    <a href="https://www.instagram.com/catcafejipssauiharu/" target="_blank">
+                        <div class="openPost__column">
+                            <h5 class="openPost__title">#DayOfButler</h5>
+                            <h6 class="openPost__hashtags">#cats#shorthear#ragdoll</h6>
+                            <div class="openPost__members">
+                                <img src="images/bsProfile.jpg" />
+                                <span class="openPost__memberCount">802 members</span>
+                                <div class="divider"></div>
+                                <span class="openPost__memberStatus">Active</span>
+                            </div>
+                        </div>
+                        <div class="openPost__column">
+                            <div class="openPost__photo">
+                                <img src="images/dayOfButler.jpg" />
+                                <div class="openPost__heartCount">
+                                    <i class="fa-solid fa-heart fa-xs"></i>
+                                    <span>255</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </main>
     
