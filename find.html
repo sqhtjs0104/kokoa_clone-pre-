@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa Clone</title>
+    <meta name="description" content="Nomad Coder Coding Challange - HTML-CSS" />
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/clock.js"></script>
+</head>
+<body>
+    <div class="statusBar">
+        <div class="statusBar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="statusBar__column">
+            <span id="nowTime">00:00</span>
+        </div>
+        <div class="statusBar__column">
+            <span>100%</span>
+            <!-- Extension plan: Interlock System Battery -->
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <headder class="screenHeader">
+        <h1 class="screenHeader__title">Find</h1>
+        <div class="screenHeader__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span class="screenHeader__span">
+                <span class="dotBadge screenHeader__dotNotification"></span>
+                <i class="fas fa-cog fa-lg"></i>
+            </span>
+        </div>
+    </headder>
+
+    <main class="mainScreen">
+        <div class="findIcons">
+            <div class="findIcons__icon">
+                <i class="fa-solid fa-qrcode"></i>
+                <span>QR Code</span>
+            </div>
+            <div class="findIcons__icon">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Add by<br>Contacts</span>
+            </div>
+            <div class="findIcons__icon">
+                <i class="fa-solid fa-fingerprint"></i>
+                <span>Add by ID</span>
+            </div>
+            <div class="findIcons__icon">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Invite</span>
+            </div>
+        </div>
+        <div class="recommendedFriends">
+            <h6 class="recommendedFriends__title">recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+        <div class="openChat">
+            <div class="openChat__header">
+                <h4>Open Chat</h4>
+                <span>Go to Openchat Home <i class="fa-solid fa-chevron-right fa-xs"></i></span>
+            </div>
+            <div class="openPost">
+                <div class="openPost__column">
+                    <h5 class="openPost__title">#GrandParkSeoul</h5>
+                    <h6 class="openPost__hashtags">#tiger#deer#seal</h6>
+                    <div class="openPost__members">
+                        <img src="images/bsProfile.jpg" />
+                        <span class="openPost__memberCount">802 members</span>
+                        <div class="divider"></div>
+                        <span class="openPost__memberStatus">Active</span>
+                    </div>
+                </div>
+                <div class="openPost__column">
+                    <div class="openPost__photo">
+                        <img src="images/grandParkSeoul.jpg" />
+                        <div class="openPost__heartCount">
+                            <i class="fa-solid fa-heart fa-xs"></i>
+                            <span>326</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="openPost">
+                <div class="openPost__column">
+                    <h5 class="openPost__title">#DayOfButler</h5>
+                    <h6 class="openPost__hashtags">#cats#shorthear#ragdoll</h6>
+                    <div class="openPost__members">
+                        <img src="images/bsProfile.jpg" />
+                        <span class="openPost__memberCount">802 members</span>
+                        <div class="divider"></div>
+                        <span class="openPost__memberStatus">Active</span>
+                    </div>
+                </div>
+                <div class="openPost__column">
+                    <div class="openPost__photo">
+                        <img src="images/dayOfButler.jpg" />
+                        <div class="openPost__heartCount">
+                            <i class="fa-solid fa-heart fa-xs"></i>
+                            <span>255</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__li">
+                <a class="nav__a" href="friends.html">
+                    <i class="fa-regular fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__a" href="chats.html">
+                    <span class="badge nav__notification">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__a" href="find.html">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__li">
+                <a class="nav__a" href="more.html">
+                    <span class="dotBadge nav__dotNotification"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script type="text/javascript">whatTimeIsNow();</script>
+    <script src="https://kit.fontawesome.com/cb9a8df948.js" crossorigin="anonymous"></script>
+</body>
+</html>

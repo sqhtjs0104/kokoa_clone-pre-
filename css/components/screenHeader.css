@@ -15,3 +15,7 @@
 .screenHeader i {
     color: var(--customBlack);
 }
+.screenHeader__dotNotification {
+    top: 0;
+    left: 15px;
+}

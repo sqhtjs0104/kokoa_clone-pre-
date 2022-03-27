@@ -1,0 +1,23 @@
+.badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: tomato;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 600;
+}
+.dotBadge {
+    width: 5px;
+    height: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+}
+.screenHeader__span {
+    position: relative;
+}

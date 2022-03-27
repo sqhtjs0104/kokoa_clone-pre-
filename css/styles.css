@@ -6,11 +6,13 @@
 @import "components/navBar.css";
 @import "components/screenHeader.css";
 @import "components/userComponent.css";
+@import "components/badge.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/chats.css";
+@import "screens/find.css";
 
 body {
     color: var(--customBlack);
@@ -18,4 +20,6 @@ body {
 }
 .mainScreen {
     margin: 0px var(--horizontalSpace);
+    overflow-y: scroll;
+    
 }

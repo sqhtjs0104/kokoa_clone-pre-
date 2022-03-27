@@ -1,5 +1,8 @@
 :root {
-    --yellow: #fae100;
+    --customYellow: #fae100;
     --customBlack: #2e363e;
+    --customGray: rgba(0, 0, 0, 0.4);
+    --customPink: #ffb0e0;
     --horizontalSpace: 25px;
+    --mainBorder: 1px solid rgba(0, 0, 0, 0.2);
 }

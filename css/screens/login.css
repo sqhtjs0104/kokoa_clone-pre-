@@ -26,10 +26,10 @@
     margin-bottom: 25px;
 }
 #loginForm input::placeholder{
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--customGray);
 }
 #loginForm input:not([type="submit"], [type="button"]) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: var(--mainBorder);
     transition: border-color 300ms ease-in-out;
 }
 #loginForm input:focus{
@@ -42,7 +42,7 @@
     border-radius: 3px;
 }
 #loginForm input[type="submit"] {
-    background-color: var(--yellow);
+    background-color: var(--customYellow);
 }
 #loginForm a {
     text-align: center;
