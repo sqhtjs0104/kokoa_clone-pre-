@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontalSpace);
+    margin-bottom: 15px;
 }
 .screenHeader__title {
     font-size: 30px;
@@ -10,4 +11,7 @@
 }
 .screenHeader__icons span {
     margin: 0px 5px;
+}
+.screenHeader i {
+    color: var(--customBlack);
 }

@@ -1,14 +1,23 @@
-.friendsScreen {
-    padding: 0px var(--horizontalSpace);
-}
 #friendsDisplayLink {
     display: block;
     padding: 15px 0px;
     background-color: #fafafa;
     text-align: center;
+    margin-top: -15px;
     margin-bottom: 10px;
     font-size: 18px;
 }
 #friendsDisplayLink i {
     color: rgba(0, 0, 0, 0.3);
+}
+.friendsScreen__channel {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.friendsScreen__channel__header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
 }
