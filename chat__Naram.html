@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat w/ Naram - Kokoa Clone</title>
+    <meta name="description" content="Nomad Coder Coding Challange - HTML-CSS" />
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/clock.js"></script>
+</head>
+<body id="chatScreen">
+    <div class="statusBar">
+        <div class="statusBar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="statusBar__column">
+            <span id="nowTime">00:00</span>
+        </div>
+        <div class="statusBar__column">
+            <span>100%</span>
+            <!-- Extension plan: Interlock System Battery -->
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="altHeader">
+        <div class="altHeaderColumn">
+            <a href="javascript:window.history.back();">
+                <span><i class="fa-solid fa-angle-left fa-2x"></i></span>
+            </a>
+        </div>
+        <div class="altHeaderColumn">
+            <h1 class="altHeader__title">Naram</h1>
+        </div>
+        <div class="altHeaderColumn">
+            <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+            <span><i class="fa-solid fa-bars fa-xl"></i></span>
+        </div>
+    </header>
+
+    <main class="mainScreen">
+        <div class="mainChat">
+            <div class="chat__timeStamp">
+                Monday, March 28, 2022
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">Hi :)</span>
+                        <span class="message__time">12:23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageRow--own">
+                <div class="messageRow__content">
+                    <div class="message__info">
+                        <span class="message__bubble">Sup?</span>
+                        <span class="message__time">12:23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">Have you seen the movie, "The Batman"?</span>
+                        <span class="message__time">12:23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">I want to see that. Do you want to watch it together?</span>
+                        <span class="message__time">12:24</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble"><img class="message__image" src="data:image/jpeg;base64,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" /></span>
+                        <span class="message__time">12:24</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageRow--own">
+                <div class="messageRow__content">
+                    <div class="message__info">
+                        <span class="message__bubble">Oh sure I love it!</span>
+                        <span class="message__time">12:24</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">I'll book it.</span>
+                        <span class="message__time">12:25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">See you at this weekend!</span>
+                        <span class="message__time">12:25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageRow--own">
+                <div class="messageRow__content">
+                    <div class="message__info">
+                        <span class="message__bubble">Ok thanks I love you ♥</span>
+                        <span class="message__time">12:25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">Luv U always too :)♥</span>
+                        <span class="message__time">12:25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="fa-regular fa-square-plus fa-xl"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message...">
+            <i class="fa-regular fa-face-smile-wink fa-lg"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+
+    <script type="text/javascript">whatTimeIsNow();</script>
+    <script src="https://kit.fontawesome.com/cb9a8df948.js" crossorigin="anonymous"></script>
+</body>
+</html>

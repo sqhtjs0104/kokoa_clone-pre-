@@ -1,4 +1,5 @@
-.statusBar {
+.statusBar,
+.statusDiv {
     top: 0;
     width: 100%;
     height: 25px;
@@ -7,8 +8,11 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    background-color: rgb(250, 250, 250);
+    z-index: 4;
+}
+.statusDiv {
     z-index: 2;
+    background-color: rgb(250, 250, 250);
 }
 header {
     margin-top: 25px;

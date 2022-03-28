@@ -22,10 +22,40 @@
 .nav__a {
     position: relative;
 }
+@keyframes notificationAnimation {
+    0% {
+        transform: none;
+    }
+    5% {
+        transform: translateY(-0.5px) rotateZ(10deg);
+    }
+    10% {
+        transform: translateY(-1px) rotateZ(0deg);
+    }
+    15% {
+        transform: translateY(-1.5px) rotateZ(-10deg);
+    }
+    20% {
+        transform: translateY(-2px) rotateZ(0deg);
+    }
+    25% {
+        transform: translateY(-1.5px) rotateZ(10deg);
+    }
+    30% {
+        transform: translateY(-1px) rotateZ(0deg);
+    }
+    35% {
+        transform: translateY(-0.5px) rotateZ(-20deg);
+    }
+    40% {
+        transform: none;
+    }
+}
 .nav__notification {
     position: absolute;
     bottom: 15px;
     left: 15px;
+    animation: notificationAnimation 2000ms linear infinite;
 }
 .nav__dotNotification {
     top: 0;
@@ -33,4 +63,26 @@
 }
 .nav i {
     color: var(--customBlack);
+}
+@keyframes appearButtonAnimation {
+    from {
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+.nav__li {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: appearButtonAnimation 500ms ease-in-out forwards;
+}
+.nav__li:nth-child(2) {
+    animation-delay: 100ms;
+}
+.nav__li:nth-child(3) {
+    animation-delay: 200ms;
+}
+.nav__li:last-child {
+    animation-delay: 300ms;
 }

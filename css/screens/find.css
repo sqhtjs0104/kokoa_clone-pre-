@@ -95,3 +95,19 @@
 .openPost__heartCount span {
     margin-left: 7px;
 }
+@keyframes heartBeat {
+    0% {
+        color: white;
+    }
+    50% {
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100% {
+        color: white;
+    }
+}
+.openPost__heartCount:hover i {
+    will-change: transform;
+    animation: heartBeat 1000ms linear infinite;
+}
