@@ -1,0 +1,76 @@
+#chatScreen,
+#chatScreen .statusBar,
+#chatScreen .altHeader {
+    background-color: var(--customSkyblue);
+}
+#chatScreen .altHeader {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+}
+.mainChat {
+    margin-top: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 10px;
+    height: 500vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat__timeStamp {
+    color: white;
+    background-color: #92a4b2;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.messageRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.messageRow__image {
+    width: 55px;
+    height: 55px;
+    border-radius: 40%;
+    margin-right: 4px;
+}
+.message__author,
+.message__time {
+    opacity: 0.8;
+    font-size: 15px;
+}
+.message__author {
+    display: block;
+    margin-bottom: 8px;
+}
+.message__bubble {
+    max-width: 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    margin: 0px 6px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.message__info {
+    display: flex;
+    align-items: flex-end;
+}
+.messageRow--own {
+    justify-content: flex-end;
+}
+.messageRow--own .message__info {
+    flex-direction: row-reverse;
+}
+.messageRow--own .message__bubble {
+    background-color: var(--customYellow);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+}

@@ -1,10 +1,17 @@
 .statusBar {
     top: 0;
     width: 100%;
+    height: 25px;
     padding: 5px 3px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    position: fixed;
+    background-color: rgb(250, 250, 250);
+    z-index: 2;
+}
+header {
+    margin-top: 25px;
 }
 .statusBar__column:first-child {
     width: 33.3%;

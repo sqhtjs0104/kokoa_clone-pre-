@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat w/ Naram - Kokoa Clone</title>
+    <meta name="description" content="Nomad Coder Coding Challange - HTML-CSS" />
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/clock.js"></script>
+</head>
+<body id="chatScreen">
+    <div class="statusBar">
+        <div class="statusBar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="statusBar__column">
+            <span id="nowTime">00:00</span>
+        </div>
+        <div class="statusBar__column">
+            <span>100%</span>
+            <!-- Extension plan: Interlock System Battery -->
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="altHeader">
+        <div class="altHeaderColumn">
+            <a href="javascript:window.history.back();">
+                <span><i class="fa-solid fa-angle-left fa-2x"></i></span>
+            </a>
+        </div>
+        <div class="altHeaderColumn">
+            <h1 class="altHeader__title">Naram</h1>
+        </div>
+        <div class="altHeaderColumn">
+            <span><i class="fa-solid fa-magnifying-glass fa-xl"></i></span>
+            <span><i class="fa-solid fa-bars fa-xl"></i></span>
+        </div>
+    </header>
+
+    <main class="mainScreen">
+        <div class="mainChat">
+            <div class="chat__timeStamp">
+                Tuesday, March 28 2020
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">Hi :)</span>
+                        <span class="message__time">12:23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow messageRow--own">
+                <div class="messageRow__content">
+                    <div class="message__info">
+                        <span class="message__bubble">Sup?</span>
+                        <span class="message__time">12:23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">Have you seen the movie, "The Batman"?</span>
+                        <span class="message__time">12:23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">I want to see that. Do you want to watch it together?</span>
+                        <span class="message__time">12:24</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">I'll book it.</span>
+                        <span class="message__time">12:24</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">See you on the weekend,</span>
+                        <span class="message__time">12:24</span>
+                    </div>
+                </div>
+            </div>
+            <div class="messageRow">
+                <img src="images/myLove.jpg" class="messageRow__image" />
+                <div class="messageRow__content">
+                    <span class="message__author">Naram</span>
+                    <div class="message__info">
+                        <span class="message__bubble">Luv U always :)♥</span>
+                        <span class="message__time">12:24</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript">whatTimeIsNow();</script>
+    <script src="https://kit.fontawesome.com/cb9a8df948.js" crossorigin="anonymous"></script>
+</body>
+</html>
